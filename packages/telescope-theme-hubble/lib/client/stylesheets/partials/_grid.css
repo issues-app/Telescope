@@ -1,0 +1,24 @@
+/* line 35, ../../sass/partials/_grid.scss */
+.content-wrapper {
+  padding: 0 10px; }
+  @media screen and (max-width: 30em) {
+    /* line 35, ../../sass/partials/_grid.scss */
+    .content-wrapper {
+      overflow-x: hidden; } }
+
+/* line 41, ../../sass/partials/_grid.scss */
+.grid {
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 47, ../../sass/partials/_grid.scss */
+.grid-small, .at-form {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  @media screen and (min-width: 30em) {
+    /* line 47, ../../sass/partials/_grid.scss */
+    .grid-small, .at-form {
+      max-width: 500px; } }
