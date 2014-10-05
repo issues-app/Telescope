@@ -1,0 +1,116 @@
+body {
+	color: $black;
+	background: $lightest-grey;
+}
+
+.content-wrapper {
+	max-width: 860px !important;
+}
+
+.posts-wrapper {
+	border-radius: 5px;
+	box-shadow: none;
+}
+
+.posts.list {
+	border-radius: 5px;
+	box-shadow: none;
+}
+
+.post {
+	.post-rank,
+	.comment-link,
+	.post-domain,
+	.post-share,
+	.discuss-link .action {
+		display: none; 
+	}
+
+	.post-heading {
+		font-weight: bold;
+	}
+}
+
+.post-meta-item {
+	color: #c7c7c7;
+
+	span.points {
+		font-size: 18px;
+	}
+
+	a.post-author {
+		font-weight: normal !important;
+	}
+}
+
+/* Categories */
+
+a.post-category {
+	color: $white !important;
+
+	&.category-action {
+		background: $action !important;
+	} 
+	&.category-adventure {
+		background: $adventure !important;
+	} 
+	&.category-drama {
+		background: $drama !important;
+	} 
+	&.category-fantasy {
+		background: $fantasy !important;
+	} 
+	&.category-horror {
+		background: $horror !important;
+	} 
+	&.category-kids {
+		background: $kids !important;
+	} 
+	&.category-life {
+		background: $life !important;
+	} 
+	&.category-manga {
+		background: $manga !important;
+	} 
+	&.category-mature {
+		background: $mature !important;
+	} 
+	&.category-noir {
+		background: $noir !important;
+	} 
+	&.category-popular {
+		background: $popular !important;
+	} 
+	&.category-romance {
+		background: $romance !important;
+	}
+	&.category-suspense {
+		background: $suspense !important;
+	}
+	&.category-superhero {
+		background: $superhero !important;
+	}
+	&.category-sci-fi {
+		background: $scifi !important;
+	}
+	&.category-weird {
+		background: $weird !important;
+	}
+
+}
+
+/* Forms */
+
+.form-horizontal {
+
+	label {
+		padding-top: 6px;
+		font-size: 14px;
+		font-weight: normal !important;
+		color: $black;
+	}
+
+	span {
+		color: $dark-grey;
+	}
+}

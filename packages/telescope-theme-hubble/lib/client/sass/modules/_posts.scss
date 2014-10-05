@@ -209,13 +209,19 @@
 	}
 }
 
-.post-meta-item{
+.post-meta-item {
 	display: inline;
-	&:after{
+	
+	&.first-child:after {
 		content: ",";
 	}
-	&:last-child:after{
-		content: "";
+
+	&:last-child {
+		display:none;
+	}
+
+	.comments-link {
+		display: none;
 	}
 }
 
@@ -233,12 +239,7 @@
 	width:100%;
 	background: white;
 	border-bottom:1px solid $lightest-grey;
-	&:first-child{
-		border-radius: 3px 3px 0px 0px;
-	}
-	&:last-child{
-		border-radius: 0px 0px 3px 3px;
-	}
+	
 	&.animate{
 		@include single-transition(ease-out, top, 400ms, 0ms);
 	}
@@ -286,6 +287,7 @@
 .post-heading{
 	margin-bottom:3px;
 	line-height: 1.2;
+	
 	@include small{
 		line-height: 1.5;
 	}

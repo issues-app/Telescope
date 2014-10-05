@@ -11,12 +11,14 @@
 @import "partials/colors";
 @import "partials/mixins";
 // @import "partials/main";
+
+@import "partials/layout";
 @import "partials/typography";
 @import "partials/icons";
+
 // @import "partials/pageslide";
 // @import "partials/markdown";
-@import "partials/tooltips";
- 
+@import "partials/tooltips"; 
 @import "modules/accounts";
 @import "modules/nav";
 // @import "modules/mobile_nav";
