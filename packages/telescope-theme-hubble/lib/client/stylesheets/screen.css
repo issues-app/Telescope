@@ -95,101 +95,86 @@ body {
   background: #f4f8fa; }
 
 /* line 6, ../sass/partials/_layout.scss */
+.views-menu,
+.categories-menu {
+  display: none; }
+
+/* line 11, ../sass/partials/_layout.scss */
 .content-wrapper {
   max-width: 860px !important; }
 
-/* line 10, ../sass/partials/_layout.scss */
+/* Drop down */
+/* line 17, ../sass/partials/_layout.scss */
+.dropdown-menu ul {
+  padding: 0 !important;
+  border: 1px solid #CDECF9;
+  box-shadow: none !important; }
+  /* line 22, ../sass/partials/_layout.scss */
+  .dropdown-menu ul li {
+    padding-left: 5px;
+    padding-bottom: 5px !important;
+    margin-bottom: 0 !important;
+    border: none !important; }
+    /* line 28, ../sass/partials/_layout.scss */
+    .dropdown-menu ul li:hover {
+      background-color: #f4f8fa; }
+    /* line 32, ../sass/partials/_layout.scss */
+    .dropdown-menu ul li a {
+      font-size: 14px !important;
+      font-weight: normal !important;
+      color: #f4f8fa; }
+
+/* line 40, ../sass/partials/_layout.scss */
 .posts-wrapper {
   border-radius: 5px;
   box-shadow: none; }
 
-/* line 15, ../sass/partials/_layout.scss */
+/* line 45, ../sass/partials/_layout.scss */
 .posts.list {
   border-radius: 5px;
   box-shadow: none; }
 
-/* line 21, ../sass/partials/_layout.scss */
-.post .post-rank,
-.post .comment-link,
-.post .post-domain,
-.post .post-share,
-.post .discuss-link .action {
-  display: none; }
-/* line 29, ../sass/partials/_layout.scss */
-.post .post-heading {
-  font-weight: bold; }
+/* line 50, ../sass/partials/_layout.scss */
+.post {
+  padding: 10px 0; }
+  /* line 53, ../sass/partials/_layout.scss */
+  .post .post-rank,
+  .post .post-time,
+  .post .comment-link,
+  .post .post-domain,
+  .post .post-share,
+  .post .discuss-link .action {
+    display: none; }
+  /* line 62, ../sass/partials/_layout.scss */
+  .post h3.post-heading a.post-title {
+    font-size: 20px !important; }
 
-/* line 34, ../sass/partials/_layout.scss */
+/* line 68, ../sass/partials/_layout.scss */
+.post.sticky .post-meta {
+  display: none; }
+
+/* line 73, ../sass/partials/_layout.scss */
 .post-meta-item {
   color: #c7c7c7; }
-  /* line 37, ../sass/partials/_layout.scss */
+  /* line 76, ../sass/partials/_layout.scss */
   .post-meta-item span.points {
-    font-size: 18px; }
-  /* line 41, ../sass/partials/_layout.scss */
+    color: #feba46; }
+  /* line 80, ../sass/partials/_layout.scss */
   .post-meta-item a.post-author {
     font-weight: normal !important; }
 
-/* Categories */
-/* line 48, ../sass/partials/_layout.scss */
-a.post-category {
-  color: #ffffff !important; }
-  /* line 51, ../sass/partials/_layout.scss */
-  a.post-category.category-action {
-    background: #ed1a6e !important; }
-  /* line 54, ../sass/partials/_layout.scss */
-  a.post-category.category-adventure {
-    background: #ff7d2b !important; }
-  /* line 57, ../sass/partials/_layout.scss */
-  a.post-category.category-drama {
-    background: #00bfaf !important; }
-  /* line 60, ../sass/partials/_layout.scss */
-  a.post-category.category-fantasy {
-    background: #09A0CF !important; }
-  /* line 63, ../sass/partials/_layout.scss */
-  a.post-category.category-horror {
-    background: #35c76f !important; }
-  /* line 66, ../sass/partials/_layout.scss */
-  a.post-category.category-kids {
-    background: #5B53BF !important; }
-  /* line 69, ../sass/partials/_layout.scss */
-  a.post-category.category-life {
-    background: #feba46 !important; }
-  /* line 72, ../sass/partials/_layout.scss */
-  a.post-category.category-manga {
-    background: #ce73f7 !important; }
-  /* line 75, ../sass/partials/_layout.scss */
-  a.post-category.category-mature {
-    background: #ed1a6e !important; }
-  /* line 78, ../sass/partials/_layout.scss */
-  a.post-category.category-noir {
-    background: #1f679e !important; }
-  /* line 81, ../sass/partials/_layout.scss */
-  a.post-category.category-popular {
-    background: #ed1a6e !important; }
-  /* line 84, ../sass/partials/_layout.scss */
-  a.post-category.category-romance {
-    background: #ff7d2b !important; }
-  /* line 87, ../sass/partials/_layout.scss */
-  a.post-category.category-suspense {
-    background: #00bfaf !important; }
-  /* line 90, ../sass/partials/_layout.scss */
-  a.post-category.category-superhero {
-    background: #5B53BF !important; }
-  /* line 93, ../sass/partials/_layout.scss */
-  a.post-category.category-sci-fi {
-    background: #09A0CF !important; }
-  /* line 96, ../sass/partials/_layout.scss */
-  a.post-category.category-weird {
-    background: #35c76f !important; }
+/* line 85, ../sass/partials/_layout.scss */
+.search .search-field {
+  background: #ffffff !important; }
 
 /* Forms */
-/* line 106, ../sass/partials/_layout.scss */
+/* line 93, ../sass/partials/_layout.scss */
 .form-horizontal label {
   padding-top: 6px;
   font-size: 14px;
   font-weight: normal !important;
   color: #000000; }
-/* line 113, ../sass/partials/_layout.scss */
+/* line 100, ../sass/partials/_layout.scss */
 .form-horizontal span {
   color: #4a4444; }
 
@@ -300,6 +285,59 @@ em {
 /* line 63, ../sass/partials/_icons.scss */
 .icon-right:before {
   content: "\2192"; }
+
+/* Categories */
+/* line 3, ../sass/partials/_categories.scss */
+a.post-category {
+  color: #ffffff !important; }
+  /* line 6, ../sass/partials/_categories.scss */
+  a.post-category.category-action {
+    background: #ed1a6e !important; }
+  /* line 9, ../sass/partials/_categories.scss */
+  a.post-category.category-adventure {
+    background: #ff7d2b !important; }
+  /* line 12, ../sass/partials/_categories.scss */
+  a.post-category.category-drama {
+    background: #00bfaf !important; }
+  /* line 15, ../sass/partials/_categories.scss */
+  a.post-category.category-fantasy {
+    background: #09A0CF !important; }
+  /* line 18, ../sass/partials/_categories.scss */
+  a.post-category.category-horror {
+    background: #35c76f !important; }
+  /* line 21, ../sass/partials/_categories.scss */
+  a.post-category.category-kids {
+    background: #5B53BF !important; }
+  /* line 24, ../sass/partials/_categories.scss */
+  a.post-category.category-life {
+    background: #feba46 !important; }
+  /* line 27, ../sass/partials/_categories.scss */
+  a.post-category.category-manga {
+    background: #ce73f7 !important; }
+  /* line 30, ../sass/partials/_categories.scss */
+  a.post-category.category-mature {
+    background: #ed1a6e !important; }
+  /* line 33, ../sass/partials/_categories.scss */
+  a.post-category.category-noir {
+    background: #1f679e !important; }
+  /* line 36, ../sass/partials/_categories.scss */
+  a.post-category.category-popular {
+    background: #ed1a6e !important; }
+  /* line 39, ../sass/partials/_categories.scss */
+  a.post-category.category-romance {
+    background: #ff7d2b !important; }
+  /* line 42, ../sass/partials/_categories.scss */
+  a.post-category.category-suspense {
+    background: #00bfaf !important; }
+  /* line 45, ../sass/partials/_categories.scss */
+  a.post-category.category-superhero {
+    background: #5B53BF !important; }
+  /* line 48, ../sass/partials/_categories.scss */
+  a.post-category.category-sci-fi {
+    background: #09A0CF !important; }
+  /* line 51, ../sass/partials/_categories.scss */
+  a.post-category.category-weird {
+    background: #35c76f !important; }
 
 /* line 1, ../sass/partials/_tooltips.scss */
 .has-tooltip {
@@ -429,7 +467,7 @@ em {
     float: left;
     z-index: 20;
     position: relative; }
-  /* line 17, ../sass/modules/_nav.scss */
+  /* line 18, ../sass/modules/_nav.scss */
   .header .logo {
     position: absolute;
     display: block;
@@ -438,40 +476,43 @@ em {
     left: 0px;
     right: 0px; }
     @media screen and (max-width: 30em) {
-      /* line 17, ../sass/modules/_nav.scss */
+      /* line 18, ../sass/modules/_nav.scss */
       .header .logo {
         font-size: 18px; }
-        /* line 25, ../sass/modules/_nav.scss */
+        /* line 26, ../sass/modules/_nav.scss */
         .header .logo a {
           position: static; } }
     @media screen and (min-width: 30em) {
-      /* line 17, ../sass/modules/_nav.scss */
+      /* line 18, ../sass/modules/_nav.scss */
       .header .logo {
         font-size: 24px; } }
-    /* line 34, ../sass/modules/_nav.scss */
+    /* line 35, ../sass/modules/_nav.scss */
     .header .logo a, .header .logo a:visited {
-      color: white; }
-  /* line 38, ../sass/modules/_nav.scss */
+      width: 514px !important;
+      height: 68px !important;
+      background: url(../images/h1-thehotlist.png) top center !important;
+      text-indent: -5000px !important; }
+  /* line 42, ../sass/modules/_nav.scss */
   .header .logo-image {
     line-height: 1; }
-    /* line 40, ../sass/modules/_nav.scss */
+    /* line 44, ../sass/modules/_nav.scss */
     .header .logo-image a {
       display: inline-block;
       background: no-repeat center center;
       font: 0/0 a;
       text-shadow: none;
       color: transparent; }
-  /* line 48, ../sass/modules/_nav.scss */
+  /* line 52, ../sass/modules/_nav.scss */
   .header .secondary-nav {
     z-index: 20;
     position: relative;
     float: right; }
 
-/* line 59, ../sass/modules/_nav.scss */
+/* line 63, ../sass/modules/_nav.scss */
 .sign-in {
   margin-right: 10px; }
 
-/* line 62, ../sass/modules/_nav.scss */
+/* line 66, ../sass/modules/_nav.scss */
 .nav {
   /* For modern browsers */
   /* For IE 6/7 (trigger hasLayout) */
@@ -483,28 +524,28 @@ em {
   /* line 7, ../sass/partials/_mixins.scss */
   .nav:after {
     clear: both; }
-  /* line 65, ../sass/modules/_nav.scss */
+  /* line 69, ../sass/modules/_nav.scss */
   .nav > li {
     line-height: 2; }
-    /* line 67, ../sass/modules/_nav.scss */
+    /* line 71, ../sass/modules/_nav.scss */
     .nav > li:last-child {
       margin-right: 0px; }
-    /* line 70, ../sass/modules/_nav.scss */
+    /* line 74, ../sass/modules/_nav.scss */
     .nav > li > a, .nav > li > div > a {
       color: white;
       font-size: 15px;
       font-weight: normal; }
-      /* line 76, ../sass/modules/_nav.scss */
+      /* line 80, ../sass/modules/_nav.scss */
       .nav > li > a.intercom em:before, .nav > li > div > a.intercom em:before {
         content: '('; }
-      /* line 79, ../sass/modules/_nav.scss */
+      /* line 83, ../sass/modules/_nav.scss */
       .nav > li > a.intercom em:after, .nav > li > div > a.intercom em:after {
         content: ')'; }
 
-/* line 86, ../sass/modules/_nav.scss */
+/* line 90, ../sass/modules/_nav.scss */
 .search {
   position: relative; }
-  /* line 88, ../sass/modules/_nav.scss */
+  /* line 92, ../sass/modules/_nav.scss */
   .search .search-field {
     font-size: 14px;
     padding: 4px 12px;
@@ -515,30 +556,30 @@ em {
     -webkit-transition: 0.2s all;
     -moz-transition: 0.2s all;
     background: white; }
-    /* line 98, ../sass/modules/_nav.scss */
+    /* line 102, ../sass/modules/_nav.scss */
     .search .search-field:focus {
       outline: none; }
-  /* line 103, ../sass/modules/_nav.scss */
+  /* line 107, ../sass/modules/_nav.scss */
   .search.empty .search-field {
     background: rgba(255, 255, 255, 0.1); }
-    /* line 105, ../sass/modules/_nav.scss */
+    /* line 109, ../sass/modules/_nav.scss */
     .search.empty .search-field:focus {
       background: white; }
-  /* line 109, ../sass/modules/_nav.scss */
+  /* line 113, ../sass/modules/_nav.scss */
   .search.empty .search-clear {
     display: none; }
 
-/* line 115, ../sass/modules/_nav.scss */
+/* line 119, ../sass/modules/_nav.scss */
 .has-dropdown .user-menu .dropdown-menu {
   left: auto;
   right: 10px; }
 
-/* line 119, ../sass/modules/_nav.scss */
+/* line 123, ../sass/modules/_nav.scss */
 .has-dropdown .notifications-menu .dropdown-menu {
   left: auto;
   right: 10px; }
 
-/* line 123, ../sass/modules/_nav.scss */
+/* line 127, ../sass/modules/_nav.scss */
 .newsletter-dismiss {
   line-height: 30px !important; }
 
@@ -1044,7 +1085,7 @@ em {
       border-width: 8px;
       top: 25px;
       margin-top: -8px; }
-    /* line 32, ../sass/modules/_comments.scss */
+    /* line 33, ../sass/modules/_comments.scss */
     .queue-container ul li {
       display: block;
       float: left;
@@ -1059,10 +1100,10 @@ em {
       line-height: 30px;
       text-align: center;
       position: relative; }
-      /* line 44, ../sass/modules/_comments.scss */
+      /* line 45, ../sass/modules/_comments.scss */
       .queue-container ul li.before {
         position: absolute; }
-      /* line 47, ../sass/modules/_comments.scss */
+      /* line 48, ../sass/modules/_comments.scss */
       .queue-container ul li a {
         position: absolute;
         top: 0px;
@@ -1074,13 +1115,13 @@ em {
         border-radius: 100px;
         background-size: 30px 30px; }
 
-/* line 70, ../sass/modules/_comments.scss */
+/* line 71, ../sass/modules/_comments.scss */
 .comment {
   margin-left: 30px;
   position: relative;
   padding: 0;
   background: none; }
-  /* line 75, ../sass/modules/_comments.scss */
+  /* line 76, ../sass/modules/_comments.scss */
   .comment .comment-body {
     -moz-transition: ease-out 600ms opacity 0ms;
     -o-transition: ease-out 600ms opacity 0ms;
@@ -1088,27 +1129,27 @@ em {
     -webkit-transition-delay: 0ms;
     transition: ease-out 600ms opacity 0ms;
     opacity: 1; }
-  /* line 80, ../sass/modules/_comments.scss */
+  /* line 81, ../sass/modules/_comments.scss */
   .comment.comment-queued .comment-body {
     opacity: 0;
     position: absolute;
     pointer-events: none; }
-  /* line 86, ../sass/modules/_comments.scss */
+  /* line 87, ../sass/modules/_comments.scss */
   .comment .comment-reply {
     display: inline-block;
     margin-top: 10px; }
 
-/* line 128, ../sass/modules/_comments.scss */
+/* line 129, ../sass/modules/_comments.scss */
 .comment-content {
   position: relative;
   -moz-border-radius: 0 3px 3px 3px;
   -webkit-border-radius: 0;
   border-radius: 0 3px 3px 3px;
   font-size: 14px; }
-  /* line 133, ../sass/modules/_comments.scss */
+  /* line 134, ../sass/modules/_comments.scss */
   .comment-content .comment-main {
     margin-left: 50px; }
-  /* line 136, ../sass/modules/_comments.scss */
+  /* line 137, ../sass/modules/_comments.scss */
   .comment-content .user-avatar {
     -moz-border-radius: 100px;
     -webkit-border-radius: 100px;
@@ -1116,21 +1157,21 @@ em {
     overflow: hidden;
     position: block;
     float: left; }
-    /* line 141, ../sass/modules/_comments.scss */
+    /* line 142, ../sass/modules/_comments.scss */
     .comment-content .user-avatar img {
       height: 40px;
       width: 40px;
       display: block; }
 
-/* line 148, ../sass/modules/_comments.scss */
+/* line 149, ../sass/modules/_comments.scss */
 .comment-meta {
   margin-bottom: 5px;
   color: #b3c1c6; }
-  /* line 150, ../sass/modules/_comments.scss */
+  /* line 151, ../sass/modules/_comments.scss */
   .comment-meta .comment-username, .comment-meta .comment-time, .comment-meta .comment-permalink {
     display: inline-block;
     margin-right: 4px; }
-  /* line 155, ../sass/modules/_comments.scss */
+  /* line 156, ../sass/modules/_comments.scss */
   .comment-meta .comment-permalink {
     position: relative;
     text-indent: 100%;
@@ -1139,23 +1180,23 @@ em {
     width: 20px;
     color: #b3c1c6;
     margin: 0; }
-    /* line 161, ../sass/modules/_comments.scss */
+    /* line 162, ../sass/modules/_comments.scss */
     .comment-meta .comment-permalink:before {
       position: absolute;
       display: block;
       top: 1px;
       left: 0;
       text-indent: 0; }
-    /* line 168, ../sass/modules/_comments.scss */
+    /* line 169, ../sass/modules/_comments.scss */
     .comment-meta .comment-permalink:hover:before {
       color: #DD3416; }
 
-/* line 173, ../sass/modules/_comments.scss */
+/* line 174, ../sass/modules/_comments.scss */
 .comment-actions {
   position: absolute;
   left: -30px;
   top: 0px; }
-  /* line 177, ../sass/modules/_comments.scss */
+  /* line 178, ../sass/modules/_comments.scss */
   .comment-actions a {
     -moz-border-radius: 0 0 0 3px;
     -webkit-border-radius: 0;
@@ -1172,13 +1213,13 @@ em {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden; }
-    /* line 189, ../sass/modules/_comments.scss */
+    /* line 190, ../sass/modules/_comments.scss */
     .comment-actions a.upvote {
       -moz-border-radius: 3px 0 0 0;
       -webkit-border-radius: 3px;
       border-radius: 3px 0 0 0;
       margin-bottom: 1px; }
-    /* line 193, ../sass/modules/_comments.scss */
+    /* line 194, ../sass/modules/_comments.scss */
     .comment-actions a i {
       font-size: 12px;
       display: block;
@@ -1189,37 +1230,37 @@ em {
       text-align: center;
       text-indent: 0;
       color: #DD3416; }
-    /* line 205, ../sass/modules/_comments.scss */
+    /* line 206, ../sass/modules/_comments.scss */
     .comment-actions a:hover {
       background: #000000; }
-      /* line 207, ../sass/modules/_comments.scss */
+      /* line 208, ../sass/modules/_comments.scss */
       .comment-actions a:hover i {
         color: white; }
-  /* line 212, ../sass/modules/_comments.scss */
+  /* line 213, ../sass/modules/_comments.scss */
   .comment-actions.upvoted .upvote, .comment-actions.downvoted .downvote {
     cursor: default; }
-    /* line 214, ../sass/modules/_comments.scss */
+    /* line 215, ../sass/modules/_comments.scss */
     .comment-actions.upvoted .upvote i, .comment-actions.downvoted .downvote i {
       color: #7ac0e4; }
-    /* line 217, ../sass/modules/_comments.scss */
+    /* line 218, ../sass/modules/_comments.scss */
     .comment-actions.upvoted .upvote:hover, .comment-actions.downvoted .downvote:hover {
       background: white; }
-  /* line 221, ../sass/modules/_comments.scss */
+  /* line 222, ../sass/modules/_comments.scss */
   .comment-actions.downvoted .upvote, .comment-actions.upvoted .downvote {
     cursor: default; }
-    /* line 223, ../sass/modules/_comments.scss */
+    /* line 224, ../sass/modules/_comments.scss */
     .comment-actions.downvoted .upvote i, .comment-actions.upvoted .downvote i {
       color: #b3c1c6; }
-    /* line 226, ../sass/modules/_comments.scss */
+    /* line 227, ../sass/modules/_comments.scss */
     .comment-actions.downvoted .upvote:hover, .comment-actions.upvoted .downvote:hover {
       background: white; }
 
-/* line 239, ../sass/modules/_comments.scss */
+/* line 240, ../sass/modules/_comments.scss */
 .comment-page .comment-new {
   margin-left: 30px;
   position: relative;
   background: #ffffff; }
-  /* line 243, ../sass/modules/_comments.scss */
+  /* line 244, ../sass/modules/_comments.scss */
   .comment-page .comment-new:after {
     bottom: 100%;
     border: solid transparent;
@@ -1234,7 +1275,7 @@ em {
     left: 20px;
     margin-left: -8px; }
 
-/* line 259, ../sass/modules/_comments.scss */
+/* line 260, ../sass/modules/_comments.scss */
 .comment-deleted {
   background: rgba(255, 255, 255, 0.6);
   border-radius: 3px;

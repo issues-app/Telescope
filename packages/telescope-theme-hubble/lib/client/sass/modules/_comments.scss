@@ -1,4 +1,4 @@
-.queue-container{
+.queue-container {
 	position:relative;
 	height:0px;
 	@include single-transition(ease-out, opacity, 400ms, 0ms);	
@@ -29,6 +29,7 @@
 			top: 25px;
 			margin-top: -8px;
 		}
+		
 		li{
 			display:block;
 			float:left;
