@@ -1,0 +1,54 @@
+/* Categories */
+
+a.post-category {
+	color: $white !important;
+
+	&.category-action {
+		background: $action !important;
+	} 
+	&.category-adventure {
+		background: $adventure !important;
+	} 
+	&.category-drama {
+		background: $drama !important;
+	} 
+	&.category-fantasy {
+		background: $fantasy !important;
+	}
+	&.category-horror {
+		background: $horror !important;
+	} 
+	&.category-kids {
+		background: $kids !important;
+	} 
+	&.category-life {
+		background: $life !important;
+	} 
+	&.category-manga {
+		background: $manga !important;
+	} 
+	&.category-mature {
+		background: $mature !important;
+	} 
+	&.category-noir {
+		background: $noir !important;
+	} 
+	&.category-popular {
+		background: $popular !important;
+	} 
+	&.category-romance {
+		background: $romance !important;
+	}
+	&.category-suspense {
+		background: $suspense !important;
+	}
+	&.category-superhero {
+		background: $superhero !important;
+	}
+	&.category-sci-fi {
+		background: $scifi !important;
+	}
+	&.category-weird {
+		background: $weird !important;
+	}
+}
