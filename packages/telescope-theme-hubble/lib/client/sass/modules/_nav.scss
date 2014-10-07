@@ -14,6 +14,7 @@
 		z-index: 20;
 		position: relative;
 	}
+	
 	.logo{
 		@extend %vcenter;
 		position:absolute;
@@ -32,7 +33,10 @@
 		left: 0px;
 		right: 0px;
 		a, a:visited{
-			color:white;
+			width: 514px !important;
+			height: 68px !important;
+			background: url(../images/h1-thehotlist.png) top center !important;
+			text-indent: -5000px !important;
 		}
 	}
 	.logo-image{
